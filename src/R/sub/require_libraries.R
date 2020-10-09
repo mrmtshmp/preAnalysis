@@ -4,7 +4,8 @@
 
 packages.in.CRAN <- c(
   "magrittr","tidyr", "ggplot2", "reshape2","readxl", "plyr","dplyr", "tableone",
-  "pROC","Matching","survey","brglm","rpart","partykit","broom"
+  "pROC","Matching","survey","brglm","rpart","partykit","broom",
+  "spatstat" # for using "stat_ecdf_weighted" by NicolasWoloszko@github
   )
 
 for(i in 1:length(packages.in.CRAN)){
@@ -13,6 +14,10 @@ for(i in 1:length(packages.in.CRAN)){
     parse(text=sprintf("require(%s)", packages.in.CRAN[i]))
   )
 }
+
+source(
+  "https://raw.githubusercontent.com/NicolasWoloszko/stat_ecdf_weighted/master/stat_ecdf_weighted.R"
+  )
 
 
 # if(!require(ExploratoryDataAnalysis)){
