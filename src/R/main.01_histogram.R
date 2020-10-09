@@ -1,6 +1,9 @@
 #' Create histogram
 #' PI: Dr Arimori
 #' date created: 2020/10/09
+#' 
+#' I appreciate NicolasWoloszko@github/stat_ecdf_weighted 
+#' in creating weighted ECDF through the ggplot2 package. 
 #' ---
 
 # subroutines-------
